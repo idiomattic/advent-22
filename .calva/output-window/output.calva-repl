@@ -841,3 +841,439 @@ clj꞉advent-22.days.d1.core꞉> 
  ...]
 clj꞉advent-22.days.d1.core꞉> 
 ; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉advent-22.core꞉> 
+; Jack-in done.
+clj꞉advent-22.core꞉> 
+nil
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/input
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/get-round-pairs
+clj꞉advent-22.days.d2.core꞉> 
+(get-round-pairs)
+["B X"
+ "A Z"
+ "A Y"
+ "B X"
+ "C Z"
+ "B Y"
+ "B X"
+ "C X"
+ "A Y"
+ "B Y"
+ "B Y"
+ "C Y"
+ "B Y"
+ "C Y"
+ "B X"
+ "A Z"
+ "C Y"
+ "B Z"
+ "C X"
+ "A Y"
+ "B Y"
+ "B Y"
+ "B Y"
+ "B Y"
+ "B X"
+ "B Y"
+ "C Y"
+ "B Y"
+ "B Y"
+ "B Y"
+ "A Y"
+ "B X"
+ "A Y"
+ "A Y"
+ "B X"
+ "B Z"
+ "B Y"
+ "C Y"
+ "A Y"
+ "A Z"
+ "C Y"
+ "A Z"
+ "C Z"
+ "C Y"
+ "B Z"
+ "C X"
+ "A Z"
+ "C Y"
+ "B X"
+ "B X"
+ ...]
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/get-round-pairs
+clj꞉advent-22.days.d2.core꞉> 
+(get-round-pairs)
+(["B" "X"]
+ ["A" "Z"]
+ ["A" "Y"]
+ ["B" "X"]
+ ["C" "Z"]
+ ["B" "Y"]
+ ["B" "X"]
+ ["C" "X"]
+ ["A" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["C" "Y"]
+ ["B" "Y"]
+ ["C" "Y"]
+ ["B" "X"]
+ ["A" "Z"]
+ ["C" "Y"]
+ ["B" "Z"]
+ ["C" "X"]
+ ["A" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["B" "X"]
+ ["B" "Y"]
+ ["C" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["B" "Y"]
+ ["A" "Y"]
+ ["B" "X"]
+ ["A" "Y"]
+ ["A" "Y"]
+ ["B" "X"]
+ ["B" "Z"]
+ ["B" "Y"]
+ ["C" "Y"]
+ ["A" "Y"]
+ ["A" "Z"]
+ ["C" "Y"]
+ ["A" "Z"]
+ ["C" "Z"]
+ ["C" "Y"]
+ ["B" "Z"]
+ ["C" "X"]
+ ["A" "Z"]
+ ["C" "Y"]
+ ["B" "X"]
+ ["B" "X"]
+ ...)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/get-round-pairs
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/score-by-choice
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/abc->xyz
+clj꞉advent-22.days.d2.core꞉> 
+(abc->xyz "A")
+"X"
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/score-by-choice
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/abc->xyz
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-outcome
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/get-round-pairs
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores)
+(1 3 8 1 6 5 1 7 8 5 5 2 5 2 1 3 2 9 7 8 5 5 5 5 1 5 2 5 5 5 8 1 8 8 1 9 5 2 8 3 2 3 6 2 9 7 3 2 1 1 ...)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-total-score
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score)
+10994
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-choice
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-total-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)
+; IllegalArgumentException No matching clause: X  advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:64)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)
+X
+; IllegalArgumentException No matching clause: X  advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:65)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/xyz->outcome
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)
+loss
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-total-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score)
+10994
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+clojure.lang.Numbers/ops (Numbers.java:1018)
+clojure.lang.Numbers/add (Numbers.java:128)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:73)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:66)
+advent-22.days.d2.core/calc-round-scores2 (form-init10084099365205469987.clj:77)
+clojure.core/map (core.clj:2745)
+clojure.lang.LazySeq/sval (LazySeq.java:40)
+clojure.lang.LazySeq/seq (LazySeq.java:49)
+clojure.lang.LazySeq/first (LazySeq.java:71)
+clojure.lang.RT/first (RT.java:685)
+clojure.core/first (core.clj:55)
+clojure.pprint/pprint-reader-macro (dispatch.clj:50)
+clojure.pprint/pprint-list (dispatch.clj:77)
+clojure.pprint/pprint-list (dispatch.clj:76)
+clojure.lang.MultiFn/invoke (MultiFn.java:229)
+clojure.pprint/write-out (pprint_base.clj:194)
+clojure.pprint/write (pprint_base.clj:233)
+clojure.pprint/write (pprint_base.clj:197)
+clojure.core/apply (core.clj:659)
+clojure.core/apply (core.clj:652)
+cider.nrepl.pprint/pprint (pprint.clj:47)
+cider.nrepl.pprint/pprint (pprint.clj:42)
+clojure.lang.Var/invoke (Var.java:390)
+nrepl.middleware.print/wrap-print (print.clj:224)
+nrepl.middleware.print/send-nonstreamed (print.clj:148)
+nrepl.middleware.print/send-nonstreamed (print.clj:147)
+clojure.core/map (core.clj:2734)
+clojure.core.protocols/iter-reduce (protocols.clj:49)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/transduce (core.clj:6804)
+clojure.core/transduce (core.clj:6790)
+nrepl.middleware.print/send-nonstreamed (print.clj:156)
+nrepl.middleware.print/send-nonstreamed (print.clj:138)
+nrepl.middleware.print/printing-transport (print.clj:174)
+cider.nrepl.middleware.track-state/make-transport (track_state.clj:232)
+nrepl.middleware.caught/caught-transport (caught.clj:58)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:123)
+clojure.main/repl (main.clj:244)
+clojure.main/repl (main.clj:261)
+clojure.main/repl (main.clj:177)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+clojure.lang.Numbers/ops (Numbers.java:1018)
+clojure.lang.Numbers/add (Numbers.java:128)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:75)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:66)
+advent-22.days.d2.core/calc-round-scores2 (form-init10084099365205469987.clj:77)
+clojure.core/map (core.clj:2745)
+clojure.lang.LazySeq/sval (LazySeq.java:40)
+clojure.lang.LazySeq/seq (LazySeq.java:49)
+clojure.lang.LazySeq/first (LazySeq.java:71)
+clojure.lang.RT/first (RT.java:685)
+clojure.core/first (core.clj:55)
+clojure.pprint/pprint-reader-macro (dispatch.clj:50)
+clojure.pprint/pprint-list (dispatch.clj:77)
+clojure.pprint/pprint-list (dispatch.clj:76)
+clojure.lang.MultiFn/invoke (MultiFn.java:229)
+clojure.pprint/write-out (pprint_base.clj:194)
+clojure.pprint/write (pprint_base.clj:233)
+clojure.pprint/write (pprint_base.clj:197)
+clojure.core/apply (core.clj:659)
+clojure.core/apply (core.clj:652)
+cider.nrepl.pprint/pprint (pprint.clj:47)
+cider.nrepl.pprint/pprint (pprint.clj:42)
+clojure.lang.Var/invoke (Var.java:390)
+nrepl.middleware.print/wrap-print (print.clj:224)
+nrepl.middleware.print/send-nonstreamed (print.clj:148)
+nrepl.middleware.print/send-nonstreamed (print.clj:147)
+clojure.core/map (core.clj:2734)
+clojure.core.protocols/iter-reduce (protocols.clj:49)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/transduce (core.clj:6804)
+clojure.core/transduce (core.clj:6790)
+nrepl.middleware.print/send-nonstreamed (print.clj:156)
+nrepl.middleware.print/send-nonstreamed (print.clj:138)
+nrepl.middleware.print/printing-transport (print.clj:174)
+cider.nrepl.middleware.track-state/make-transport (track_state.clj:232)
+nrepl.middleware.caught/caught-transport (caught.clj:58)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:123)
+clojure.main/repl (main.clj:244)
+clojure.main/repl (main.clj:261)
+clojure.main/repl (main.clj:177)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+clojure.lang.Numbers/ops (Numbers.java:1018)
+clojure.lang.Numbers/add (Numbers.java:128)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:75)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:66)
+advent-22.days.d2.core/calc-round-scores2 (form-init10084099365205469987.clj:77)
+clojure.core/map (core.clj:2745)
+clojure.lang.LazySeq/sval (LazySeq.java:40)
+clojure.lang.LazySeq/seq (LazySeq.java:49)
+clojure.lang.LazySeq/first (LazySeq.java:71)
+clojure.lang.RT/first (RT.java:685)
+clojure.core/first (core.clj:55)
+clojure.pprint/pprint-reader-macro (dispatch.clj:50)
+clojure.pprint/pprint-list (dispatch.clj:77)
+clojure.pprint/pprint-list (dispatch.clj:76)
+clojure.lang.MultiFn/invoke (MultiFn.java:229)
+clojure.pprint/write-out (pprint_base.clj:194)
+clojure.pprint/write (pprint_base.clj:233)
+clojure.pprint/write (pprint_base.clj:197)
+clojure.core/apply (core.clj:659)
+clojure.core/apply (core.clj:652)
+cider.nrepl.pprint/pprint (pprint.clj:47)
+cider.nrepl.pprint/pprint (pprint.clj:42)
+clojure.lang.Var/invoke (Var.java:390)
+nrepl.middleware.print/wrap-print (print.clj:224)
+nrepl.middleware.print/send-nonstreamed (print.clj:148)
+nrepl.middleware.print/send-nonstreamed (print.clj:147)
+clojure.core/map (core.clj:2734)
+clojure.core.protocols/iter-reduce (protocols.clj:49)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/transduce (core.clj:6804)
+clojure.core/transduce (core.clj:6790)
+nrepl.middleware.print/send-nonstreamed (print.clj:156)
+nrepl.middleware.print/send-nonstreamed (print.clj:138)
+nrepl.middleware.print/printing-transport (print.clj:174)
+cider.nrepl.middleware.track-state/make-transport (track_state.clj:232)
+nrepl.middleware.caught/caught-transport (caught.clj:58)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:123)
+clojure.main/repl (main.clj:244)
+clojure.main/repl (main.clj:261)
+clojure.main/repl (main.clj:177)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-total-score2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1018)
+clj꞉advent-22.days.d2.core꞉> 
+clojure.lang.Numbers/ops (Numbers.java:1018)
+clojure.lang.Numbers/add (Numbers.java:128)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:74)
+advent-22.days.d2.core/determine-round-score2 (form-init10084099365205469987.clj:66)
+advent-22.days.d2.core/calc-round-scores2 (form-init10084099365205469987.clj:78)
+clojure.core/map (core.clj:2745)
+clojure.lang.LazySeq/sval (LazySeq.java:40)
+clojure.lang.LazySeq/seq (LazySeq.java:49)
+clojure.lang.LazySeq/first (LazySeq.java:71)
+clojure.lang.RT/first (RT.java:685)
+clojure.core/first (core.clj:55)
+clojure.pprint/pprint-reader-macro (dispatch.clj:50)
+clojure.pprint/pprint-list (dispatch.clj:77)
+clojure.pprint/pprint-list (dispatch.clj:76)
+clojure.lang.MultiFn/invoke (MultiFn.java:229)
+clojure.pprint/write-out (pprint_base.clj:194)
+clojure.pprint/write (pprint_base.clj:233)
+clojure.pprint/write (pprint_base.clj:197)
+clojure.core/apply (core.clj:659)
+clojure.core/apply (core.clj:652)
+cider.nrepl.pprint/pprint (pprint.clj:47)
+cider.nrepl.pprint/pprint (pprint.clj:42)
+clojure.lang.Var/invoke (Var.java:390)
+nrepl.middleware.print/wrap-print (print.clj:224)
+nrepl.middleware.print/send-nonstreamed (print.clj:148)
+nrepl.middleware.print/send-nonstreamed (print.clj:147)
+clojure.core/map (core.clj:2734)
+clojure.core.protocols/iter-reduce (protocols.clj:49)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/transduce (core.clj:6804)
+clojure.core/transduce (core.clj:6790)
+nrepl.middleware.print/send-nonstreamed (print.clj:156)
+nrepl.middleware.print/send-nonstreamed (print.clj:138)
+nrepl.middleware.print/printing-transport (print.clj:174)
+cider.nrepl.middleware.track-state/make-transport (track_state.clj:232)
+nrepl.middleware.caught/caught-transport (caught.clj:58)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:123)
+clojure.main/repl (main.clj:244)
+clojure.main/repl (main.clj:261)
+clojure.main/repl (main.clj:177)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+([B X] [A Z] [A Y] [B X] [C Z] [B Y] [B X] [C X] [A Y] [B Y] [B Y] [C Y] [B Y] [C Y] [B X] [A Z] [C Y] [B Z] [C X] [A Y] [B Y] [B Y] [B Y] [B Y] [B X] [B Y] [C Y] [B Y] [B Y] [B Y] [A Y] [B X] [A Y] [A Y] [B X] [B Z] [B Y] [C Y] [A Y] [A Z] [C Y] [A Z] [C Z] [C Y] [B Z] [C X] [A Z] [C Y] [B X] [B X] [C Z] [C Y] [B Y] [A X] [C Z] [B Y] [B X] [A Z] [B Z] [C Y] [C Z] [B X] [B Y] [B Y] [C Y] [B Y] [B Y] [C Y] [B Z] [A Y] [B Y] [C Y] [B Y] [B Y] [B Y] [C Y] [B X] [C X] [C Y] [B X] [B X] [C X] [B Y] [C Z] [B Y] [B Y] [B Y] [C Y] [B X] [A Z] [C Y] [A Z] [B X] [B X] [A Y] [C X] [B Z] [B Y] [B X] [C X] [C X] [B X] [A Z] [A Y] [A Z] [B X] [B X] [B Y] [C Y] [C Z] [B Y] [A Y] [C Y] [A Z] [A X] [A Y] [B X] [B Y] [C Y] [B Y] [B Z] [C X] [B Y] [B Z] [C Y] [C Y] [C Z] [B Y] [C Y] [B Y] [C Y] [A Z] [A Z] [A Z] [B Y] [B Y] [C Z] [B Y] [C Y] [B X] [B X] [A Y] [B X] [B X] [C Y] [C Z] [B Y] [A Z] [A Y] [C Y] [B X] [C Z] [C Y] [B Y] [B Y] [A Z] [B Y] [B Y] [B X] [B Z] [A Z] [C Y] [A Z] [C Z] [B Y] [B Y] [A X] [B X] [A Z] [B Y] [C Z] [A Y] [B Y] [A Z] [C X] [C Y] [B Y] [B Y] [B Y] [C Z] [B X] [C Z] [B Y] [C Y] [C Y] [B Y] [C Y] [C Z] [B Y] [C Z] [B Y] [B Y] [B Y] [A Y] [A Y] [B X] [C Z] [B Y] [B Z] [C Y] [B Z] [C Y] [B Y] [B X] [B Y] [C Y] [C Z] [B Y] [A Y] [B X] [C Z] [C Y] [B X] [B Y] [B Y] [C Z] [C Z] [A Z] [B X] [B X] [C Z] [B Y] [B Y] [B Y] [B Y] [A Y] [B Y] [B Y] [B X] [B Z] [A Y] [B X] [C Y] [B Y] [B X] [B Y] [B Y] [C Y] [A Y] [A Y] [A Z] [B Y] [B Y] [C Y] [C Y] [C Y] [A Z] [B Z] [B Z] [B Z] [B Y] [B X] [B X] [B Y] [B Y] [A Z] [B Y] [C Y] [B X] [B X] [B Y] [B X] [A Z] [C Y] [C Y] [C Y] [C X] [A Z] [B Y] [A Z] [B X] [B X] [B Y] [C Y] [B X] [C Y] [A X] [B Y] [A Y] [B Y] [A X] [A X] [A Z] [B X] [B Y] [B X] [B X] [A Z] [B X] [B X] [C Y] [C Y] [B Y] [B Z] [B Y] [A Y] [B Z] [C Z] [C Y] [B Z] [B Y] [B X] [C Z] [B Y] [B Y] [B Y] [C X] [A Z] [B Y] [B Y] [A X] [C Z] [B Y] [C X] [B Y] [B Z] [B Z] [A Z] [C Y] [B Y] [B Y] [C Y] [B Y] [B Y] [C Y] [B Y] [C Y] [A Z] [C Y] [B Z] [C Z] [B Z] [C Y] [B X] [C Y] [B X] [B Y] [B Y] [C Y] [C Y] [C Z] [B X] [B Y] [B Z] [B Y] [B X] [B Y] [B Y] [B Y] [A Y] [C Y] [C Y] [A Y] [B Y] [A Y] [B Y] [C X] [B Z] [B Y] [C Y] [A Z] [C Y] [C X] [B Y] [B Y] [B Y] [B X] [C Z] [C X] [B Y] [B Y] [A Z] [A X] [B Y] [B X] [C Y] [B X] [B Y] [B X] [A Z] [A Y] [C Y] [B X] [B Y] [C Z] [A Y] [A Z] [B Y] [B Z] [C Y] [B Y] [C Z] [C Y] [B Y] [A Y] [C X] [A Y] [B Y] [A Z] [B X] [B Y] [A Y] [B Z] [B Z] [B Y] [B Y] [B X] [C Y] [C Y] [C Y] [B X] [B Y] [C Z] [C X] [B Y] [A Z] [A Y] [B X] [B X] [C Z] [C Y] [A Z] [C X] [B Y] [C Z] [B X] [B Y] [B X] [C X] [B Y] [B Y] [B X] [B Y] [B Z] [C Y] [B Y] [B Y] [B Z] [C Z] [C Z] [B Y] [C Y] [C Y] [B Y] [C X] [B Y] [C Y] [B X] [A Y] [C X] [C X] [C Y] [B Y] [B Y] [A X] [B X] [B Y] [B X] [B Y] [C Y] [C X] [C Y] [B X] [B X] [A Z] [C Y] [B Y] [C Z] [C Y] [B Y] [C Y] [C Z] [C Z] [C Y] [A Z] [C Z] [B Y] [B Y] [A Y] [B Y] [C Y] [B Y] [B Y] [B Y] [C Y] [A Y] [B Y] [B X] [A Y] [B Y] [B Y] [C Y] [B Y] [B X] [A Z] [B Y] [B Y] [C Z] [B Z] [C Z] [C Y] [A Y] [C Y] [B Y] [B Y] [B Y] [B Z] [C Z] [C Z] [C Y] [A Z] [B Y] [B Y] [B Y] [B Z] [B Y] [C Y] [B Y] [B Z] [A Z] [A Z] [C Z] [A Z] [A Y] [B Y] [B Y] [B Y] [B Y] [A Z] [A Y] [B X] [C Z] [B Y] [B Z] [C X] [B X] [A Y] [C Y] [B X] [B Y] [B X] [B Y] [A Z] [B Y] [A Y] [B Y] [C Y] [B Y] [B Y] [B Y] [A Z] [A Y] [A Y] [B Y] [B Y] [C X] [A Z] [B Y] [C Y] [C Y] [A Y] [B Y] [A X] [B Z] [B Y] [A Z] [B X] [B Y] [B Y] [C Y] [C Y] [B Y] [A Z] [B Y] [C Z] [C Y] [A Y] [B Z] [C Y] [C X] [C Y] [A X] [B Y] [B Y] [B Y] [C Z] [B X] [C Y] [B X] [B Y] [B Y] [C Y] [C Y] [A Z] [B Y] [C Y] [C Z] [C Y] [B Z] [C Y] [B X] [B X] [B Y] [C Z] [B Y] [B Y] [B X] [B Y] [B Y] [A Y] [A Z] [B Y] [A Z] [B Y] [B Y] [A Z] [B X] [A Z] [A Y] [B Y] [B X] [A Z] [B Z] [C Z] [B Y] [B Y] [B Z] [B X] [C Z] [C Y] [B Y] [C Y] [B Y] [B X] [B Y] [B X] [C Y] [C Y] [B X] [A Y] [C Y] [B X] [B Y] [C Y] [B Y] [A Z] [C Y] [B X] [A Z] [B Y] [B Y] [A Z] [C Y] [B Y] [C X] [C Z] [C Y] [B Z] [B Y] [B X] [C Z] [B Z] [A Z] [B Y] [C X] [C Y] [B X] [B Y] [C Y] [C Y] [B Y] [B Y] [B Y] [B X] [B Y] [B Y] [B X] [C Y] [B X] [B Y] [C Z] [C Y] [C Y] [B Z] [A Z] [C Y] [C Y] [C Y] [C Y] [B Y] [C X] [B X] [C X] [B Y] [C Y] [B Z] [B X] [C Y] [B Y] [B X] [B Y] [C Y] [C Y] [C X] [A Y] [C Y] [C Y] [A Z] [A Z] [B Y] [A Z] [A Z] [C Z] [B X] [C Y] [B Y] [B X] [B Y] [B Y] [C Y] [B X] [B X] [B Y] [C Y] [B Y] [B Z] [A Y] [B Y] [A Y] [C Y] [A Z] [B Y] [B Y] [A Z] [A X] [B Y] [B Y] [B X] [B Y] [C Y] [C Y] [C Y] [B Y] [A X] [B Y] [C Y] [C Z] [A Y] [B X] [C Y] [A Y] [B Y] [A Y] [B Z] [C Y] [C Y] [C Z] [B Y] [C Y] [C Y] [B Y] [C Z] [C Y] [A Y] [B Y] [B Y] [A Y] [C X] [B X] [B Y] [B X] [B Y] [B Y] [B Y] [A Z] [A Y] [B Y] [B Y] [B X] [C Y] [C Y] [B Y] [B Y] [C Z] [B Y] [B Y] [B X] [B X] [B Y] [C Z] [B Z] [B X] [B Y] [A Y] [C X] [A Z] [B X] [B Y] [C Z] [B X] [C Y] [A Z] [A X] [B X] [C Y] [B Y] [B X] [B Z] [B Y] [B Y] [C X] [B X] [A Z] [C Y] [C Y] [C Z] [B X] [B X] [A Y] [A Y] [B Y] [C Y] [B Y] [C Y] [B Y] [B X] [A Y] [B X] [B Z] [A Y] [C Z] [A Y] [A X] [C Z] [B Y] [B Y] [C Y] [C Y] [B Y] [B Y] [A Y] [C Y] [B Y] [B Z] [B X] [A Z] [C Y] [B X] [B X] [A Y] [B Y] [C Y] [C Y] [B Y] [B Y] [C X] [C Y] [C Z] [A Y] [B Y] [B X] [B Y] [B Y] [C X] [C Y] [C Y] [B Y] [B Y] [A Z] [B Y] [B Y] [B Y] [C Y] [A Y] [B X] [B Y] [B X] [C Y] [B Y] [B Y] [B Y] [B X] [A Z] [B Y] [B Y] [C Y] [B Z] [C Y] [B X] [C X] [C Y] [B Y] [A Z] [B Y] [B X] [A Y] [B Y] [B X] [B X] [B Y] [B Y] [B Y] [A Z] [B Y] [C Z] [B X] [A Y] [C X] [C X] [B Y] [B X] [B Y] [B Y] [B Y] [C Z] [A Y] [A Z] [C Y] [B Y] [B Y] [B Y] [C Y] [B X] [B Y] [B Y] [B Y] [B Z] [B Z] [A Y] [A Y] [A Y] [B Y] [C Y] [C Y] [B X] [C Y] [B Y] [A Y] [B Y] [C Y] [C Y] [B Y] [B Y] [B X] [A Y] [B Y] [B Y] [A Z] [B Y] [C Z] [A Z] [A Z] [C Z] [B Y] [B X] [B Y] [B Y] [B Z] [A Y] [C Y] [A Y] [B X] [B Y] [C Y] [B Y] [C Y] [A Y] [A Z] [A Z] [A Y] [C Z] [C X] [A Y] [A Y] [B Y] [B X] [A Y] [B Y] [B Y] [B Z] [A Y] [B Y] [B X] [B Z] [B Y] [C Y] [C X] [B Y] [C Z] [B Y] [B Y] [A Z] [B Y] [C Y] [A Z] [B Y] [A X] [C X] [A Z] [A Y] [A Y] [B Y] [A Y] [C Y] [B Y] [B Y] [C Y] [B Y] [C Y] [B Y] [A Y] [B X] [C Z] [C X] [A Y] [A Y] [B Y] [B Z] [C X] [B Y] [A Y] [C Z] [B Y] [C Z] [A X] [C Y] [A Z] [B X] [C Y] [B Y] [C Y] [B Y] [B X] [A Y] [B Y] [B X] [B Y] [B Z] [B Z] [C Y] [B Z] [B X] [B X] [A Y] [B Y] [B Y] [A Y] [C Y] [A Z] [C X] [C Z] [B Z] [C X] [C X] [B X] [C Y] [B X] [B X] [A Y] [B Z] [A Y] [A Z] [B X] [B Z] [B X] [C Y] [B Y] [B Y] [C X] [B X] [C Z] [B X] [B Z] [B Y] [A X] [C Y] [C Y] [B Y] [B Y] [A Z] [C Y] [B Z] [B X] [B Y] [A Z] [A Y] [C Z] [A Y] [C Y] [B Y] [C Y] [C Y] [B Y] [C Y] [C X] [B Y] [C X] [B Y] [C Z] [B Y] [B Y] [B X] [A X] [A Y] [C Y] [C Y] [B Z] [C Y] [B X] [B Z] [B Y] [C X] [B Y] [C Z] [C Y] [B Y] [C Y] [B Y] [A Y] [C Y] [C X] [A Z] [A Y] [B X] [C Z] [C Y] [B Y] [A Y] [C Y] [A Z] [C Y] [B X] [B X] [A Y] [C X] [B Y] [B Y] [A X] [B Y] [B Y] [C Y] [A Z] [C Y] [B Y] [B Y] [C Z] [C Y] [C Y] [C Y] [C X] [B Z] [A Z] [C Y] [B Y] [C X] [C Y] [B Y] [B Y] [B Y] [C Y] [B X] [B X] [B Z] [B Y] [B X] [A X] [B Z] [B Y] [B X] [B Y] [B Y] [C Y] [B Y] [C Z] [B Y] [B Z] [B Z] [C Y] [A Y] [C Y] [A Y] [B Z] [B Y] [C Y] [B Y] [B Y] [C Y] [B X] [B Y] [B Y] [B X] [B Z] [B Y] [A Y] [B Y] [C Y] [B X] [C Z] [B Y] [C Z] [B Y] [B Y] [A Y] [B Y] [C Y] [C Y] [B Y] [C Y] [B Y] [B Y] [C Y] [C Y] [A Y] [A Z] [A Z] [C X] [B Y] [A Y] [C Y] [B X] [A Z] [B X] [A Y] [C Y] [C Y] [B Y] [C Z] [C X] [B Z] [B Y] [B Y] [A Z] [A Z] [A Z] [C Y] [B X] [A Y] [A Y] [B Y] [B Y] [B Y] [B Y] [B X] [A Y] [A Y] [B Y] [C Z] [C Y] [A Y] [C Y] [A X] [B Y] [A Y] [B Y] [C X] [B Y] [B X] [B Y] [C Z] [B Y] [A Z] [C X] [B Z] [C Y] [B Y] [A Y] [A Y] [B Z] [B Y] [B Y] [B Y] [B X] [A Z] [A Y] [B Y] [C X] [A X] [A Z] [C X] [C Y] [B Y] [B Y] [A Y] [C Y] [B Y] [A Y] [C Y] [A Y] [C Y] [B Y] [C Y] [B Y] [B Y] [A Z] [B Z] [A Y] [A Y] [B X] [B Y] [A Y] [C Z] [A Z] [A Y] [C Y] [B Y] [C Y] [B Z] [B X] [C Z] [B Y] [B Y] [B Y] [C Y] [B Y] [B Y] [A Y] [A X] [B Y] [C Z] [B Y] [B Y] [B Y] [B Y] [C Y] [C Y] [B Y] [B Z] [B Y] [C Y] [A Y] [B Y] [C Y] [A Z] [A Y] [C Z] [A X] [B Y] [B Y] [A X] [B Y] [B Y] [B Y] [B Y] [B Y] [B Z] [C Y] [C Z] [C Z] [B Y] [A Y] [B Z] [A Z] [A Y] [C Z] [B X] [A X] [B Y] [C Z] [B X] [B Y] [B Y] [C Y] [A Z] [B Y] [A Z] [B X] [B Z] [A Z] [C Y] [C Z] [B Y] [C Y] [B Y] [B X] [B X] [B Y] [A Y] [A Z] [C Z] [B X] [B Y] [C Z] [C Y] [B Y] [C Z] [A Y] [C Y] [A Z] [B Y] [B Y] [B Y] [B X] [A Y] [B Y] [C X] [B Z] [B Y] [C Z] [B X] [C Z] [C Y] [A Z] [C Y] [C X] [C Z] [B Y] [B X] [C Y] [B Y] [C Y] [B Z] [A Y] [B Y] [C Z] [C X] [B X] [B Y] [B Z] [C Z] [A Y] [C Z] [B Y] [B X] [A X] [C Y] [B X] [A Z] [A Y] [C Y] [C Y] [B Y] [C Y] [B X] [B Z] [C Y] [B Y] [C Y] [A X] [A Y] [C X] [C Y] [B X] [C Y] [A Z] [C X] [C Y] [B X] [B Y] [A Y] [A Y] [B Y] [B Z] [B Z] [A Z] [B Y] [B Y] [B Y] [C Y] [B X] [A Y] [C Z] [A Y] [C Y] [B Y] [B Y] [B Y] [B Z] [C Y] [B Y] [A Y] [A Z] [B X] [A Z] [B X] [B Y] [B X] [C Y] [B X] [B X] [A Z] [B Y] [C Z] [B X] [A Z] [B X] [B Y] [B Y] [C X] [C Y] [B Y] [C Y] [B Y] [C Y] [B Y] [A Z] [C Y] [C Y] [B Y] [C Z] [B X] [A Y] [A Z] [C Y] [A X] [A Y] [A Y] [C Y] [C X] [B X] [B Y] [B X] [B Y] [B Y] [C Z] [B Z] [B Y] [C Y] [C Z] [A Z] [B Y] [A Y] [C Y] [B X] [B Y] [C Z] [C Y] [B Y] [C Y] [A Y] [C Z] [B Y] [B X] [A Z] [B Y] [C Y] [B X] [B Z] [A Z] [B Y] [A X] [A Y] [B Z] [C Z] [C Y] [C Y] [B Y] [B X] [B Y] [B X] [B Y] [C Y] [B Y] [B X] [C Z] [C Y] [A Z] [C X] [B X] [C Y] [B Z] [B Y] [A Z] [B X] [B Y] [B X] [B X] [C Y] [B Y] [B Y] [A Z] [C Y] [B Y] [B Y] [C Y] [A Y] [B X] [C Y] [A Z] [A Z] [A X] [B Y] [C X] [B Y] [B Y] [C Y] [C Z] [A Y] [C Y] [B Y] [B Y] [B Y] [B X] [B Z] [C Y] [B Y] [B X] [B Y] [B Y] [B Y] [C Y] [B Y] [C X] [B Y] [B X] [A Z] [B Y] [C Y] [A Z] [A Z] [B Z] [A Y] [B Y] [C Z] [A X] [A Z] [B X] [B X] [C Y] [A Y] [B Y] [A Z] [C Z] [B Y] [B X] [B X] [B Z] [B Y] [C Y] [B Y] [B Y] [C Z] [A Z] [B Z] [B Z] [B Y] [C Y] [B Y] [B X] [A Y] [B X] [C Z] [B Z] [B Y] [C Y] [B Y] [C Y] [C Z] [B Y] [A X] [B Y] [C Y] [C Z] [B Y] [A Y] [B X] [B Y] [C Z] [B Y] [C Y] [B Y] [B Y] [C Y] [B X] [B Y] [C Y] [C Y] [A Z] [C Y] [B Y] [C Z] [C X] [B X] [B Y] [B Y] [B Y] [B Y] [A Z] [C Y] [A Y] [C Y] [C Y] [C Y] [B Y] [C Y] [B Y] [A Y] [C Y] [B X] [C X] [C Y] [A Y] [C Y] [B X] [A Z] [A Z] [C Y] [C Y] [B X] [B Y] [C Y] [B Y] [B X] [B Y] [B X] [C X] [A Y] [B Y] [B Y] [B X] [B X] [C X] [C Y] [B Y] [B Y] [B Y] [B Y] [B Z] [B X] [A Z] [B Y] [C Y] [B X] [B X] [A Y] [A Z] [B Y] [C Y] [C Z] [C Y] [A Y] [B Y] [B Z] [B Y] [B X] [C Y] [B Z] [B X] [C X] [B Y] [C Y] [B Y] [B Y] [B Y] [B Y] [A Y] [B Y] [C Y] [C Y] [B X] [C Y] [B Y] [C Y] [A Y] [B Z] [C Y] [A Y] [B Y] [C Y] [B Z] [B Y] [B Z] [B X] [B X] [B X] [B X] [B Y] [B Z] [C Y] [C Y] [B Y] [B X] [C Y] [A Y] [A Z] [B X] [B Y] [B Y] [C Y] [B X] [B X] [C Y] [C Z] [B Y] [B Y] [C Y] [C Y] [C X] [B Y] [C Z] [A Y] [A Z] [B Y] [C Y] [A Y] [C Y] [A Y] [C X] [B Y] [C Y] [C Z] [B Y] [C Z] [B X] [B X] [B Y] [B Y] [C Y] [A Y] [B X] [A Z] [B Y] [B Y] [B Y] [B X] [B Y] [C X] [C Y] [A Y] [B Y] [B X] [A Z] [A Y] [B Y] [B Y] [B Y] [C X] [C Y] [B Y] [B Y] [B Y] [C Z] [B Y] [B Y] [B X] [B Y] [A Y] [A Z] [A Y] [B Y] [B Y] [A Y] [B Y] [B Y] [A Y] [B Y] [A Z] [B Z] [B Y] [C Y] [B Y] [B Y] [A Y] [B Y] [B Y] [B Y] [B X] [C Y] [B Y] [C Y] [C Y] [B Z] [B X] [B Y] [A Z] [B Y] [A Y] [C Y] [A Z] [C Z] [B X] [B Y] [B X] [B X] [C Y] [B Y] [B Y] [B Y] [B Y] [A Z] [C X] [B Y] [B Y] [C Y] [A Y] [A Y] [A Y] [B Z] [A Y] [B Y] [A Z] [C Y] [B Y] [B Y] [C X] [C X] [C Y] [B X] [A Z] [B X] [B X] [B Y] [C Y] [A Z] [C Y] [B Y] [C Y] [B Z] [C Y] [A Y] [B Y] [B Y] [C Z] [B Z] [C Y] [A Y] [B X] [C Y] [B Y] [A Z] [B Z] [B X] [B Y] [B Y] [A Z] [A Z] [B Y] [B Y] [B Y] [B Z] [A Y] [A Z] [B Y] [C Y] [C Y] [B Y] [A Z] [A Z] [C Y] [C Y] [B Y] [A Z] [B Y] [A Y] [C Y] [A Y] [B Y] [A Y] [C Y] [B Z] [B Y] [B X] [B Y] [C Y] [C Y] [C Y] [B X] [A Y] [A Y] [A Z] [B Y] [B Y] [B Y] [C Y] [B X] [B Y] [B Z] [B Y] [A Z] [B Y] [B X] [B X] [B Y] [B Y] [C Y] [A Z] [A Y] [B Y] [B Y] [B Y] [C Z] [B Y] [B Y] [B Y] [C Y] [B Y] [B Y] [C Y] [C Z] [A X] [B Y] [B Y] [C Y] [B Y] [C X] [B Z] [B X] [C X] [B Y] [B X] [B X] [B Y] [C Z] [B X] [B Y] [C Z] [C Y] [B Y] [C Y] [B Y] [B Y] [A Y] [B X] [C Y] [B Y] [A Y] [A X] [A Z] [B Z] [B Z] [A Y] [B X] [B Y] [C Z] [C Y] [C X] [C Y] [A Y] [B Y] [B X] [A Y] [C Y] [C Y] [C Y] [B Y] [B Y] [B Z] [B X] [B Z] [B Y] [C Y] [A Y] [B Y] [B X] [B Y] [C Z] [C Y] [B Y] [B Z] [C Y] [C Y] [C Y] [C X] [B Y] [B Y] [C Y] [A Y] [B X] [B Y] [C Y] [A Z] [C X] [B Y] [A Z] [C Z] [B Y] [C Y] [A Z] [B Y] [B Z] [A Y] [B Y] [B X] [B Y] [C Z] [A Y] [C X] [B Y] [C Y] [B Z] [A Z] [B Y] [B Y] [B Y] [B Z] [A Y] [C Y] [A Y] [A Z] [B X] [B X] [B Y] [B Y] [B X] [B Z] [B Y] [B Y] [C Z] [B X] [C Z] [C Z] [B X] [B Y] [B X] [C Y] [B Y] [C Z] [B Y] [C Y] [C Y] [B X] [C Y] [A Z] [C Z] [B Y] [B X] [B Y] [A Z] [B X] [B Z] [C Z] [C Y] [C Y] [C X] [C Y] [B Z] [A Z] [A Z] [C Y] [A Z] [B Y] [B Y] [B X] [B X] [B X] [C Y] [B Y] [B Y] [A X] [C X] [B Y] [B X] [B X] [B Z] [C Y] [C Y] [C Y] [C Y] [C X] [C Y] [A X] [A Y] [C Y] [C Y] [B Y] [B X] [B Y] [B X] [A Y] [A X] [C Y] [C Z] [B Y] [C Y] [C Z] [B Z] [C X] [B Y] [C X] [B Y] [C Y] [B X] [C Y] [C Y] [C Y] [C Y] [C Y] [C Y] [B Y] [C Y] [C Y] [B X] [C Y] [B Y] [B Y] [B Y] [A Y] [B Y] [B Y] [B Y] [B X] [B Z] [B Y] [B Y] [C Z] [A Y] [B Y] [B Y] [B X] [B Y] [C Y] [C X] [B X] [A Y] [B Y] [A Z] [B Y] [A Y] [B Y] [B Y] [A Z] [B Z] [B Y] [B X] [B Y] [A Y] [C Z] [C Z] [B Y] [B Y] [A Z] [C Y] [C X] [B Y] [B Y] [B Y] [B Z] [C Y] [C Y] [A Y] [A Y] [C Y] [B Y] [A Z] [B Y] [B Z] [C Y] [B Y] [B X] [C Y] [C Y] [B Y] [C Y] [A Y] [B Y] [C Z] [C Y] [C Y] [B Y] [C Y] [A Y] [C X] [A Y] [C Y] [A Z] [B Y] [C Y] [B Y] [A Z] [B Y] [B X] [B Y] [C Y] [B Y] [B X] [B Z] [C X] [B Z] [A Z] [B Z] [A Z] [C Y] [A Y] [B Y] [B Y] [C Y] [B X] [B Y] [A Y] [B X] [B Y] [B Y] [A Y] [A Z] [A Y] [B Y] [B Y] [C Y] [B Y] [B Y] [C Y] [B Y] [B Y] [C X] [A Z] [B X] [B Y] [B Y] [A X] [A Y] [A Z] [A X] [B Y] [B Y] [B Y] [A Y] [C Y] [A Y] [C Z] [B X] [A Z] [C Y] [A X] [B Y] [C Y] [B X] [C Z] [B X] [B Y] [C Y] [A Z] [A X] [C X] [B X] [B Y] [B Y] [A Y] [B Y] [C Y] [C Y] [C Z] [B Y] [B Y] [C Y] [C Z] [B Y] [A Z] [A Z] [C X] [B Y] [C Y] [C Z] [C Y] [B X] [C Z] [B X] [B Y] [C X] [B Y] [C Y] [A Z] [A Z] [B X] [B Z] [A X] [A Z] [C X] [A Z] [B Z] [B Y] [C Y] [B X] [B Y] [B Z] [B Y] [B X] [B Y] [C X] [B Y] [B X] [B Y] [C Y] [C X] [B Z] [B Y] [C X] [C X] [B X] [B Y] [B X] [B Y] [B Y] [B Y] [B Y] [B X] [B Y] [A Z] [B Y] [A Y] [B Y] [A Y] [B Y] [A Y] [C Y] [B Y] [C Y] [C Y] [C Y] [C Y] [C Y] [C Y] [A Z] [A Z] [B X] [C X] [C Z] [B Y] [C X] [A Z] [C Z] [C Y] [B Z] [B Y] [B Z] [B Y] [A Z] [B X] [B Y] [B X] [C Y] [B Y] [B X] [A Y] [B Y] [B Y] [B Z] [B X] [C X] [B Y] [B Y] [C Y] [C Y] [B Y] [C Y] [C X] [A X] [C X] [C Y] [B Y] [B Y] [B Y] [B Z] [B Y] [B Z] [B Y] [B X] [A Z] [C Z] [C Y] [C Y] [A Y] [B X] [B Y] [C Z] [A Y] [A Y] [B Y] [B X] [A Z] [B Y] [B Y] [A Y] [C Y] [A Z] [C Y] [B Z] [B Y] [B Y] [C Y] [C Z] [B Y] [B Y] [C Y] [C Y] [B Z] [B Z] [A Y] [C Y] [A Z] [B Z] [B Y] [B Y] [B X] [B Y] [A Z] [A Y] [A Z] [B Y] [B X] [C X] [C Y] [C Z] [B Y] [B Y] [B Y] [A Y] [C Y] [B Y] [C Y] [C Y] [B Y])
+()
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/determine-round-score2
+clj꞉advent-22.days.d2.core꞉> 
+#'advent-22.days.d2.core/calc-round-scores2
+clj꞉advent-22.days.d2.core꞉> 
+(calc-round-scores2)
+(1 8 4 1 7 5 1 2 4 5 5 6 5 6 1 8 6 9 2 4 5 5 5 5 1 5 6 5 5 5 4 1 4 4 1 9 5 6 4 8 6 8 7 6 9 2 8 6 1 1 ...)
+clj꞉advent-22.days.d2.core꞉> 
+(calc-total-score2)
+12526
+clj꞉advent-22.days.d2.core꞉> 
